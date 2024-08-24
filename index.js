@@ -3,6 +3,7 @@ const app = express();
 const routes = require('./rutas.js');
 const port = 3000
 
+app.use(express.static('static'));
 app.use(routes)
 
 app.listen(port,()=>{
